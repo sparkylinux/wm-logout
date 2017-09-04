@@ -1,0 +1,1 @@
+?package(wm-logout):needs="X11" section="Applications/System"        title="Log Out" command="/usr/bin/wm-logout" icon="system-shutdown"

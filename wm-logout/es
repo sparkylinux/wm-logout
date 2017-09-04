@@ -1,0 +1,20 @@
+# Archivo de localización en español para wm-logout
+# Copyright 2015 Fernando "seacat" Velo <seacat.linux@gmail.com> 2015/12/22
+# Bajo la licencia GNU GPL v2
+# Ultima actualización 2016/01/13
+# Last update 2016/02/08 by pavroo
+
+LOCAL1="Cerrar sesión"
+LOCAL2="Salir"
+LOCAL3="Elegir una acción"
+LOCAL4="Cerrar_la_sesión"
+LOCAL5="Suspender"
+LOCAL6="Hibernar"
+LOCAL7="Suspensión_híbrida"
+LOCAL8="Reiniciar"
+LOCAL9="Apagar"
+LOCAL10="Forzar_el_apagado"
+
+### .desktop file to be translated too
+# Name[es_AR]=Cerrar sesión
+# Comment[es_AR]=Ventana para cerrar la sesión en varios administradores de ventanas

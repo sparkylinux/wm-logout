@@ -1,0 +1,30 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Log Out
+GenericName=Log Out
+Name[de_DE]=Abmelden
+Name[es_AR]=Cerrar sesión
+Name[fr_FR]=Déconnexion
+Name[ja_JP]=ログアウト
+Name[pl_PL]=Wyloguj
+Name[pt_BR]=Sair
+Name[pt_PT]=Sair
+Name[sv_SE]=Logga ut
+Comment=Log Out window for various window managers
+Comment[de_DE]=Abmeldefenster für verschiedene Fenstermanager
+Comment[es_AR]=Ventana para cerrar la sesión en varios administradores de ventanas
+Comment[fr_FR]=Fenêtre de déconnexion pour divers gestionnaires de fenêtres
+Comment[it_IT]=Finestra di Log Out universale
+Comment[ja_JP]=様々なウィンドウマネージャのウィンドウからログアウトします
+Comment[pl_PL]=Okno wylogowania dla różnych mendżerów okien
+Comment[pt_BR]=Sair para vários gerenciadores de janela
+Comment[pt_PT]=Sair para vários gerenciadores de janela
+Comment[sv_SE]=Utloggningsfönster för olika fönsterhanterare
+Exec=/usr/bin/wm-logout
+Icon=system-shutdown
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;System
+

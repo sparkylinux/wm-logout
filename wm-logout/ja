@@ -1,0 +1,21 @@
+# Japanese localization file for wm-logout
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
+# Under the GNU GPL v2
+# Last update 2015/12/23
+# Translated to Japanese by BALLOON a.k.a. Fu-sen.
+
+LOCAL1="ログアウト"
+LOCAL2="終了"
+LOCAL3="アクションを選択"
+LOCAL4="ログアウト"
+LOCAL5="サスペンド"
+LOCAL6="バイバネート"
+LOCAL7="バイバネート・サスペンド"
+LOCAL8="再起動"
+LOCAL9="電源オフ"
+LOCAL10="強制電源オフ"
+
+
+### .desktop file to be translated too
+# Name[ja_JP]=ログアウト
+# Comment[ja_JP]=様々なウィンドウマネージャのウィンドウからログアウトします
