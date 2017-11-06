@@ -2,7 +2,6 @@
 # Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Wednesday 13 January 21:30:10 WET 2016
 # Sob a Licença GNU GPL v2
 # Última atualização Tuesday 26 January 21:56:00 WET 2016
-
 LOCAL1="Sair"
 LOCAL2="Terminar sessão"
 LOCAL3="Escolha uma acção"
@@ -13,7 +12,6 @@ LOCAL7="Suspender_Híbrido"
 LOCAL8="Reiniciar"
 LOCAL9="Desligar"
 LOCAL10="Desligar_forçando"
-
 ### .desktop file to be translated too
 # Name[pt_PT]=Sair
 # Comment[pt_PT]=Sair para vários gerenciadores de janela

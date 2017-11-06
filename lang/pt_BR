@@ -4,7 +4,6 @@
 # Revisado e adaptado por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 29/01/2016
 # Sob a Licença GNU GPL v2
 # Última atualização 29/01/2016
-
 LOCAL1="Sair"
 LOCAL2="Terminar sessão"
 LOCAL3="Escolha uma ação"
@@ -15,7 +14,6 @@ LOCAL7="Suspender_Híbrido"
 LOCAL8="Reiniciar"
 LOCAL9="Desligar"
 LOCAL10="Desligar_forçando"
-
 ### .desktop file to be translated too
 # Name[pt_BR]=Sair
 # Comment[pt_BR]=Sair para vários gerenciadores de janela

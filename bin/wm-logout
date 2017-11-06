@@ -3,7 +3,7 @@
 # Log Out action script for tiny window managers.
 # It works with any window manager and systemd.
 # Copyrigt Paweł "pavroo" Pijanowski 2013-2017 under GNU GPLv3 license
-# Last update 2017/08/31
+# Last update 2017/11/06
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/wm-logout"
@@ -32,7 +32,18 @@ fi
 DIALOG="yad --form --width=300 --center --undecorated --skip-taskbar --borders=20 --on-top"
 FIELD="--field="
 BUTTON="--button="Cancel!gtk-cancel":1 --buttons-layout=center"
-# $TITLE"$TITLETEXT" 
+ARCHARM="`uname -m | grep arm`"
+
+if [ "$ARCHARM" != "" ]; then
+	
+$DIALOG \
+$FIELD"$LOCAL4!system-logout":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
+$FIELD"$LOCAL8!system-reboot":fbtn "systemctl reboot" \
+$FIELD"$LOCAL9!system-shutdown":fbtn "systemctl poweroff" \
+$BUTTON
+
+else
+
 $DIALOG \
 $FIELD"$LOCAL4!system-logout":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
 $FIELD"$LOCAL5!system-suspend":fbtn "systemctl suspend" \
@@ -40,5 +51,7 @@ $FIELD"$LOCAL6!system-suspend-hibernate":fbtn "systemctl hibernate" \
 $FIELD"$LOCAL8!system-reboot":fbtn "systemctl reboot" \
 $FIELD"$LOCAL9!system-shutdown":fbtn "systemctl poweroff" \
 $BUTTON
+
+fi
 
 exit 0

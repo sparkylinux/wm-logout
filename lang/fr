@@ -2,7 +2,6 @@
 # Copyright 2016 hiver <hiver@club-internet.fr> 2016/05/12
 # Sous licence GNU GPL v2
 # Dernière mise à jour 2016/06/05
-
 LOCAL1="Déconnexion"
 LOCAL2="Quitter"
 LOCAL3="Choisir une action"
@@ -13,7 +12,6 @@ LOCAL7="Suspension_hybride"
 LOCAL8="Redémarrer"
 LOCAL9="Éteindre"
 LOCAL10="Forcer_l'extinction"
-
 ### .desktop file to be translated too
 # Name[fr_FR]=Déconnexion
 # Comment[fr_FR]=Fenêtre de déconnexion pour divers gestionnaires de fenêtres

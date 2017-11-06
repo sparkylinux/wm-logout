@@ -3,7 +3,6 @@
 # Under the GNU GPL v2
 # Last update 2016/02/28
 # German Translation by lunatic
-
 LOCAL1="Abmelden"
 LOCAL2="Beenden"
 LOCAL3="Aktion wählen"
@@ -14,7 +13,6 @@ LOCAL7="Hybrid-Bereitschaftsbetrieb"
 LOCAL8="Neustart"
 LOCAL9="Ausschalten"
 LOCAL10="Erzwinge_Ausschalten"
-
 ### .desktop file to be translated too
 # Name[de_DE]=Abmelden
 # Comment[de_DE]=Abmeldefenster für verschiedene Fenstermanager

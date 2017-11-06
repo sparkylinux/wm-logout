@@ -26,5 +26,5 @@ else
 	if [ ! -d /usr/share/sparky/wm-logout ]; then
 		mkdir -p /usr/share/sparky/wm-logout
 	fi
-	cp wm-logout/* /usr/share/sparky/wm-logout/	
+	cp lang/* /usr/share/sparky/wm-logout/	
 fi
