@@ -1,0 +1,19 @@
+# Indonesian localization file for wm-logout
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
+# Under the GNU GPL v2
+# Last update 2018/08/01 by pavroo
+# Translated to Indonesian by les kompie
+LOCAL1="Log Out"
+LOCAL2="Keluar"
+LOCAL3="Pilih salah satu"
+LOCAL4="LogOut"
+LOCAL5="Suspend"
+LOCAL6="Hibernasi"
+LOCAL7="Hybrid_Suspend"
+LOCAL8="Reboot"
+LOCAL9="Matikan Sistem"
+LOCAL10="Matikan Paksa Sistem"
+### .desktop file to be translated too
+# Name[id_ID]=Log Out
+# Comment[id_ID]=Window Log Out untuk aneka window manager
+
