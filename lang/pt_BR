@@ -3,17 +3,17 @@
 # Traduzido por  Joel Chaves "Flacc"  <joel_chaves@icloud.com> 13/01/2016
 # Revisado e adaptado por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 29/01/2016
 # Sob a Licença GNU GPL v2
-# Última atualização 29/01/2016
-LOCAL1="Sair"
-LOCAL2="Terminar sessão"
-LOCAL3="Escolha uma ação"
-LOCAL4="Sair"
-LOCAL5="Suspender"
-LOCAL6="Hibernar"
-LOCAL7="Suspender_Híbrido"
-LOCAL8="Reiniciar"
-LOCAL9="Desligar"
-LOCAL10="Desligar_forçando"
+# Last update 2018/10/28 by SteveMoto
+LOCAL_OPTION_1="Sair"
+LOCAL_OPTION_2="Suspender"
+LOCAL_OPTION_3="Hibernar"
+LOCAL_OPTION_4="Reiniciar"
+LOCAL_OPTION_5="Desligar"
+LOCAL_OBSOLATE_1="Sair"
+LOCAL_OBSOLATE_2="Terminar sessão"
+LOCAL_OBSOLATE_3="Escolha uma ação"
+LOCAL_OBSOLATE_4="Suspender_Híbrido"
+LOCAL_OBSOLATE_5="Desligar_forçando"
 ### .desktop file to be translated too
 # Name[pt_BR]=Sair
 # Comment[pt_BR]=Sair para vários gerenciadores de janela

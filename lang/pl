@@ -1,18 +1,18 @@
 # Polish localization file for wm-logout
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
 # Under the GNU GPL v2
-# Last update 2015/11/04
 # Translated to Polish by pavroo
-LOCAL1="Wyloguj"
-LOCAL2="Zakończ"
-LOCAL3="Wybierz akcję"
-LOCAL4="Wyloguj"
-LOCAL5="Wstrzymaj"
-LOCAL6="Zahibernuj"
-LOCAL7="Wstrzymaj_Hybrydowo"
-LOCAL8="Uruchom_Ponownie"
-LOCAL9="Wyłącz"
-LOCAL10="Wyłącz_Siłowo"
+# Last update 2018/10/28 by SteveMoto
+LOCAL_OPTION_1="Wyloguj"
+LOCAL_OPTION_2="Wstrzymaj"
+LOCAL_OPTION_3="Zahibernuj"
+LOCAL_OPTION_4="Uruchom_Ponownie"
+LOCAL_OPTION_5="Wyłącz"
+LOCAL_OBSOLATE_1="Wyloguj"
+LOCAL_OBSOLATE_2="Zakończ"
+LOCAL_OBSOLATE_3="Wybierz akcję"
+LOCAL_OBSOLATE_4="Wstrzymaj_Hybrydowo"
+LOCAL_OBSOLATE_5="Wyłącz_Siłowo"
 ### .desktop file, również do przetłumaczenia
 # Name[pl_PL]=Wyloguj
 # Comment[pl_PL]=Okno wylogowania dla różnych mendżerów okien

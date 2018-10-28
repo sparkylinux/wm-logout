@@ -1,18 +1,18 @@
-# English localization file for wm-logout
+# German localization file for wm-logout
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
 # Under the GNU GPL v2
-# Last update 2016/02/28
 # German Translation by lunatic
-LOCAL1="Abmelden"
-LOCAL2="Beenden"
-LOCAL3="Aktion wählen"
-LOCAL4="Abmelden"
-LOCAL5="Bereitschaft"
-LOCAL6="Ruhezustand"
-LOCAL7="Hybrid-Bereitschaftsbetrieb"
-LOCAL8="Neustart"
-LOCAL9="Ausschalten"
-LOCAL10="Erzwinge_Ausschalten"
+# Last update 2018/10/28 by SteveMoto
+LOCAL_OPTION_1="Abmelden"
+LOCAL_OPTION_2="Bereitschaft"
+LOCAL_OPTION_3="Ruhezustand"
+LOCAL_OPTION_4="Neustart"
+LOCAL_OPTION_5="Ausschalten"
+LOCAL_OBSOLATE_1="Abmelden"
+LOCAL_OBSOLATE_2="Beenden"
+LOCAL_OBSOLATE_3="Aktion wählen"
+LOCAL_OBSOLATE_4="Hybrid-Bereitschaftsbetrieb"
+LOCAL_OBSOLATE_5="Erzwinge_Ausschalten"
 ### .desktop file to be translated too
 # Name[de_DE]=Abmelden
 # Comment[de_DE]=Abmeldefenster für verschiedene Fenstermanager

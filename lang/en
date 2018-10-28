@@ -1,17 +1,18 @@
 # English localization file for wm-logout
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
 # Under the GNU GPL v2
-# Last update 2017/02/10 by pavroo
-LOCAL1="Log Out"
-LOCAL2="Exit"
-LOCAL3="Choose an action"
-LOCAL4="LogOut"
-LOCAL5="Suspend"
-LOCAL6="Hibernate"
-LOCAL7="Hybrid_Suspend"
-LOCAL8="Reboot"
-LOCAL9="PowerOff"
-LOCAL10="Force_Power_Off"
+#
+# Last update 2018/10/28 by SteveMoto
+LOCAL_OPTION_1="LogOut"
+LOCAL_OPTION_2="Suspend"
+LOCAL_OPTION_3="Hibernate"
+LOCAL_OPTION_4="Reboot"
+LOCAL_OPTION_5="PowerOff"
+LOCAL_OBSOLATE_1="Log Out"
+LOCAL_OBSOLATE_2="Exit"
+LOCAL_OBSOLATE_3="Choose an action"
+LOCAL_OBSOLATE_4="Hybrid_Suspend"
+LOCAL_OBSOLATE_5="Force_Power_Off"
 ### .desktop file to be translated too
 # Name[en_US]=Log Out
 # Comment[en_US]=Log Out window for various window managers
