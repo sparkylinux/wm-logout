@@ -2,8 +2,8 @@
 
 # Log Out action script for tiny window managers.
 # It works with any window manager and systemd.
-# Copyrigt Paweł "pavroo" Pijanowski 2013-2017 under GNU GPLv3 license
-# Last update 2018/08/01
+# Copyrigt Paweł "pavroo" Pijanowski 2013-2019 under GNU GPLv3 license
+# Last update 2019/01/05
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/wm-logout"
@@ -35,9 +35,10 @@ DIALOG="yad --form --width=300 --center --undecorated --skip-taskbar --borders=2
 FIELD="--field="
 BUTTON="--button="Cancel!gtk-cancel":1 --buttons-layout=center"
 ARCHARM="`uname -m | grep arm`"
-TESTMODE=`grep "live" /etc/passwd`
+TESTLIVE=`grep "live" /etc/passwd`
+TESTVIRTUAL=`grep "hypervisor" /proc/cpuinfo`
 
-if [ "$ARCHARM" != "" ] || [ "$TESTMODE" != "" ]; then
+if [ "$ARCHARM" != "" ] || [ "$TESTLIVE" != "" ] || [ "$TESTVIRTUAL" != "" ]; then
 	
 $DIALOG \
 $FIELD"$LOCAL4!system-logout":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
