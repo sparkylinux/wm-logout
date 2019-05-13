@@ -3,7 +3,7 @@
 # Log Out action script for tiny window managers.
 # It works with any window manager and systemd.
 # Copyrigt Paweł "pavroo" Pijanowski 2013-2019 under GNU GPLv3 license
-# Last update 2019/04/14
+# Last update 2019/05/13
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/wm-logout"
@@ -33,7 +33,21 @@ else
 . $DEFLOCDIR/en
 fi
 
-DIALOG="yad --form --width=300 --center --undecorated --skip-taskbar --borders=20 --on-top"
+DIALOG="yad --form --width=330 --center --undecorated --skip-taskbar --borders=20 --on-top"
+TEXT="--text-align=center --text="
+OSNAME="`lsb_release -d | awk '{print $2}'`"
+if [ "$OSNAME" = "" ]; then
+	OSNAME="Linux"
+else
+	OSNAME="$OSNAME"
+fi
+OSVERSION="`lsb_release -r | awk '{print $2}'`"
+if [ "$OSVERSION" = "" ]; then
+	OSVERSION="1.0"
+else
+	OSVERSION="$OSVERSION"
+fi
+FONT="font_weight='bold'"
 FIELD="--field="
 BUTTON="--button="Cancel!gtk-cancel":1 --buttons-layout=center"
 ARCHARM="`uname -m | grep arm`"
@@ -42,7 +56,7 @@ TESTVIRTUAL=`grep "hypervisor" /proc/cpuinfo`
 
 if [ "$ARCHARM" != "" ] || [ "$TESTLIVE" != "" ] || [ "$TESTVIRTUAL" != "" ]; then
 	
-$DIALOG \
+$DIALOG $TEXT"<span $FONT>$OSNAME $OSVERSION</span>\n" \
 $FIELD"$LOCAL4!system-logout":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
 $FIELD"$LOCAL8!system-reboot":fbtn "systemctl reboot" \
 $FIELD"$LOCAL9!system-shutdown":fbtn "systemctl poweroff" \
@@ -50,7 +64,7 @@ $BUTTON
 
 else
 
-$DIALOG \
+$DIALOG $TEXT"<span $FONT>$OSNAME $OSVERSION</span>\n" \
 $FIELD"$LOCAL4!system-logout":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
 $FIELD"$LOCAL5!system-suspend":fbtn "systemctl suspend" \
 $FIELD"$LOCAL6!system-suspend-hibernate":fbtn "systemctl hibernate" \
