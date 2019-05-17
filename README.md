@@ -20,9 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Dependencies:
 -------------
 coreutils
-gawk
 grep
-lsb-release
 systemd
 yad
 

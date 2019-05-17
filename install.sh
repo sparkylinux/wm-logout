@@ -19,6 +19,7 @@ if [ "$1" = "uninstall" ]; then
    	rm -f /usr/share/applications/wm-logout.desktop
 	rm -f /usr/share/menu/wm-logout
 	rm -rf /usr/share/sparky/wm-logout
+	rm -f /usr/share/pixmaps/sparky-logo-clear0.png
 else
 	cp bin/wm-logout /usr/bin/
 	cp share/wm-logout.desktop /usr/share/applications/
@@ -26,5 +27,9 @@ else
 	if [ ! -d /usr/share/sparky/wm-logout ]; then
 		mkdir -p /usr/share/sparky/wm-logout
 	fi
-	cp lang/* /usr/share/sparky/wm-logout/	
+	cp lang/* /usr/share/sparky/wm-logout/
+	if [ ! -d /usr/share/pixmaps ]; then
+		mkdir -p /usr/share/pixmaps
+	fi
+	cp pixmaps/* /usr/share/pixmaps/
 fi
