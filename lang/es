@@ -1,18 +1,18 @@
-# Archivo de localizaci髇 en espa駉l para wm-logout
+# Archivo de localizaci贸n en espa帽ol para wm-logout
 # Copyright 2015 Fernando "seacat" Velo <seacat.linux@gmail.com> 2015/12/22
 # Bajo la licencia GNU GPL v2
-# Ultima actualizaci髇 2016/01/13
+# Ultima actualizaci贸n 2016/01/13
 # Last update 2016/02/08 by pavroo
-LOCAL1="Cerrar sesi髇"
+LOCAL1="Cerrar sesi贸n"
 LOCAL2="Salir"
-LOCAL3="Elegir una acci髇"
-LOCAL4="Cerrar_la_sesi髇"
+LOCAL3="Elegir una acci贸n"
+LOCAL4="Cerrar_la_sesi贸n"
 LOCAL5="Suspender"
 LOCAL6="Hibernar"
-LOCAL7="Suspensi髇_h韇rida"
+LOCAL7="Suspensi贸n_h铆brida"
 LOCAL8="Reiniciar"
 LOCAL9="Apagar"
 LOCAL10="Forzar_el_apagado"
 ### .desktop file to be translated too
-# Name[es_AR]=Cerrar sesi髇
-# Comment[es_AR]=Ventana para cerrar la sesi髇 en varios administradores de ventanas
+# Name[es_AR]=Cerrar sesi贸n
+# Comment[es_AR]=Ventana para cerrar la sesi贸n en varios administradores de ventanas
