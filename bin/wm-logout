@@ -3,12 +3,14 @@
 # Log Out action script for tiny window managers.
 # It works with any window manager and systemd.
 # Copyrigt Paweł "pavroo" Pijanowski 2013-2019 under GNU GPLv3 license
-# Last update 2019/09/19
+# Last update 2019/11/25
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/wm-logout"
 if [ "`cat /etc/default/locale | grep de`" != "" ]; then
 . $DEFLOCDIR/de
+elif [ "`cat /etc/default/locale | grep el`" != "" ]; then
+. $DEFLOCDIR/el
 elif [ "`cat /etc/default/locale | grep es`" != "" ]; then
 . $DEFLOCDIR/es
 elif [ "`cat /etc/default/locale | grep fr`" != "" ]; then

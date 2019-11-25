@@ -1,0 +1,17 @@
+# Greek localization file for wm-logout
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
+# Under the GNU GPL v2
+# Last update 2019/11/06 by jidan
+LOCAL1="Αποσύνδεση"
+LOCAL2="Έξοδος"
+LOCAL3="Επιλέξτε μια ενέργεια"
+LOCAL4="Αποσύνδεση"
+LOCAL5="Αναστολή λειτουργίας"
+LOCAL6="Κατάσταση Νάρκης"
+LOCAL7="Υβριδική αναστολή λειτουργίας"
+LOCAL8="Επανεκκίνηση"
+LOCAL9="Τερματισμός συστήματος"
+LOCAL10="Δυναμικός τερματισμός"
+### .desktop file to be translated too
+# Name[el_GR]=Αποσύνδεση
+# Comment[el_GR]=Παράθυρο αποσύνδεσης για διάφορους Διαχειριστές Παραθύρων
