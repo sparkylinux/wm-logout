@@ -3,7 +3,7 @@
 # Log Out action script for tiny window managers.
 # It works with any window manager and systemd.
 # Copyrigt Paweł "pavroo" Pijanowski 2013-2020 under GNU GPLv3 license
-# Last update 2020/10/11
+# Last update 2020/10/24
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/wm-logout"
@@ -39,9 +39,9 @@ fi
 
 DIALOG="yad --form --width=330 --center --undecorated --skip-taskbar --borders=20 --on-top"
 LOGO="--image=/usr/share/pixmaps/sparky-logo-clear0.png --image-on-top"
-FONT="font_weight='bold'"
+#FONT="font_weight='bold'"
 FIELD="--field="
-BUTTON="--button="Cancel!gtk-cancel":1 --buttons-layout=center"
+BUTTON="--button="Cancel!gtk-cancel!tooltip":1 --buttons-layout=center"
 ARCHARM="`uname -m | grep arm`"
 TESTLIVE=`grep "live" /etc/passwd`
 TESTVIRTUAL=`grep "hypervisor" /proc/cpuinfo`
@@ -49,19 +49,19 @@ TESTVIRTUAL=`grep "hypervisor" /proc/cpuinfo`
 if [ "$ARCHARM" != "" ] || [ "$TESTLIVE" != "" ] || [ "$TESTVIRTUAL" != "" ]; then
 	
 $DIALOG $LOGO \
-$FIELD"$LOCAL4!system-logout":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
-$FIELD"$LOCAL8!system-reboot":fbtn "systemctl reboot" \
-$FIELD"$LOCAL9!system-shutdown":fbtn "systemctl poweroff" \
+$FIELD"$LOCAL4!system-logout!tooltip":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
+$FIELD"$LOCAL8!system-reboot!tooltip":fbtn "systemctl reboot" \
+$FIELD"$LOCAL9!system-shutdown!tooltip":fbtn "systemctl poweroff" \
 $BUTTON
 
 else
 
 $DIALOG $LOGO \
-$FIELD"$LOCAL4!system-logout":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
-$FIELD"$LOCAL5!system-suspend":fbtn "systemctl suspend" \
-$FIELD"$LOCAL6!system-suspend-hibernate":fbtn "systemctl hibernate" \
-$FIELD"$LOCAL8!system-reboot":fbtn "systemctl reboot" \
-$FIELD"$LOCAL9!system-shutdown":fbtn "systemctl poweroff" \
+$FIELD"$LOCAL4!system-logout!tooltip":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
+$FIELD"$LOCAL5!system-suspend!tooltip":fbtn "systemctl suspend" \
+$FIELD"$LOCAL6!system-suspend-hibernate!tooltip":fbtn "systemctl hibernate" \
+$FIELD"$LOCAL8!system-reboot!tooltip":fbtn "systemctl reboot" \
+$FIELD"$LOCAL9!system-shutdown!tooltip":fbtn "systemctl poweroff" \
 $BUTTON
 
 fi
