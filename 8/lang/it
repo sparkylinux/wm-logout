@@ -1,0 +1,18 @@
+# File di localizzazione in Italiano per wm-logout.
+# Copyright 2015 Carlo Troiani <troianicarlo@gmail.com> 12/11/2015
+# Rilasciato sotto licenza GNU GPL v2
+# Ultimo aggiornamento 30/11/2015
+LOCAL1="Log Out"
+LOCAL2="Esci"
+LOCAL3="Effettua una scelta"
+LOCAL4="Termina_la_sessione"
+LOCAL5="Sospensione"
+LOCAL6="Ibernazione"
+LOCAL7="Sospensione_Ibrida"
+LOCAL8="Riavvia"
+LOCAL9="Spegni"
+LOCAL10="Force_Power_Off"
+LOCAL11="Lock_Screen"
+### .desktop file to be translated too
+# Name[it_it]=Log Out
+# Comment[it_IT]=Finestra di Log Out universale

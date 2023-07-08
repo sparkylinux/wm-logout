@@ -1,0 +1,20 @@
+# Arquivo de localização para Portugues do Brasil do wm-logout
+# Copyright 2015 Paweł‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
+# Traduzido por  Joel Chaves "Flacc"  <joel_chaves@icloud.com> 13/01/2016
+# Revisado e adaptado por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 29/01/2016
+# Sob a Licença GNU GPL v2
+# Última atualização 29/01/2016
+LOCAL1="Sair"
+LOCAL2="Terminar sessão"
+LOCAL3="Escolha uma ação"
+LOCAL4="Sair"
+LOCAL5="Suspender"
+LOCAL6="Hibernar"
+LOCAL7="Suspender_Híbrido"
+LOCAL8="Reiniciar"
+LOCAL9="Desligar"
+LOCAL10="Desligar_forçando"
+LOCAL11="Lock_Screen"
+### .desktop file to be translated too
+# Name[pt_BR]=Sair
+# Comment[pt_BR]=Sair para vários gerenciadores de janela

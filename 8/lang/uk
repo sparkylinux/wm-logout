@@ -1,0 +1,19 @@
+# Файл української локалізації для wm-logout.
+# Ukrainian localization made by XalisRatt 2023/02/04 (matrix : <@xalisqull:arcticfoxes.net> discord: <XalisRatt#2308>)
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
+# Під ліцензією GNU GPL v2
+# Last update 2017/02/10 by pavroo
+LOCAL1="Вийти"
+LOCAL2="Вихід"
+LOCAL3="Оберіть дію"
+LOCAL4="Змінити користувача"
+LOCAL5="Сон"
+LOCAL6="Гібернація"
+LOCAL7="Гібридний_Сон"
+LOCAL8="Перезавантажити"
+LOCAL9="Вимкнути"
+LOCAL10="Вимкнути_примусово"
+LOCAL11="Lock_Screen"
+### .desktop file to be translated too
+# Name[uk_UA]=Вийти
+# Comment[uk_UA]=Вікно виходу з системи для різних віконних менеджерів

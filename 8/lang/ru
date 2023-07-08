@@ -1,0 +1,18 @@
+# Файл русской локали для wm-logout
+# Copyright 2015 PaweЕ‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
+# Under the GNU GPL v2
+# Last update 2019/04/14 by pavroo
+LOCAL1="Выйти"
+LOCAL2="Выход"
+LOCAL3="Выберите действие"
+LOCAL4="Сменить_пользователя"
+LOCAL5="Сон"
+LOCAL6="Гибернация"
+LOCAL7="Гибридный_сон"
+LOCAL8="Перезагрузить"
+LOCAL9="Выключение"
+LOCAL10="Выключить_питание"
+LOCAL11="Lock_Screen"
+### .desktop файл был переведён - ChourS
+# Name[ru_RU]=Выйти
+# Comment[ru_RU]=Окно выхода из системы для различных оконных менеджеров
