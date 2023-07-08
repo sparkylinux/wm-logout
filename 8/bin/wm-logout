@@ -56,7 +56,7 @@ if [ "$ARCHARM" != "" ] || [ "$TESTLIVE" != "" ] || [ "$TESTVIRTUAL" != "" ]; th
 	
 $DIALOG $LOGO \
 $FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
-$FIELD"$LOCAL11!system-lock-screen!$LOCAL11":fbtn "i3lock --image /opt/locker/sparky-lock.png" \
+$FIELD"$LOCAL11!system-lock-screen!$LOCAL11":fbtn "i3lock-fancy -g -p" \
 $FIELD"$LOCAL8!system-reboot!$LOCAL8":fbtn "systemctl reboot" \
 $FIELD"$LOCAL9!system-shutdown!$LOCAL9":fbtn "systemctl poweroff" \
 $BUTTON
@@ -65,7 +65,7 @@ else
 
 $DIALOG $LOGO \
 $FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
-$FIELD"$LOCAL11!system-lock-screen!$LOCAL11":fbtn "i3lock --image /opt/locker/sparky-lock.png" \
+$FIELD"$LOCAL11!system-lock-screen!$LOCAL11":fbtn "i3lock-fancy -g -p" \
 $FIELD"$LOCAL5!system-suspend!$LOCAL5":fbtn "systemctl suspend" \
 $FIELD"$LOCAL6!system-suspend-hibernate!$LOCAL6":fbtn "systemctl hibernate" \
 $FIELD"$LOCAL8!system-reboot!$LOCAL8":fbtn "systemctl reboot" \
