@@ -3,7 +3,7 @@
 # Log Out action script for tiny window managers.
 # It works with any window manager and systemd.
 # Copyrigt Paweł "pavroo" Pijanowski 2013-2023 under GNU GPLv3 license
-# Last update 2023/02/10
+# Last update 2023/07/10
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/wm-logout"
@@ -51,11 +51,12 @@ BUTTON="--button="Cancel!gtk-cancel!Cancel":1 --buttons-layout=center"
 ARCHARM="`uname -m | grep arm`"
 TESTLIVE=`grep "live" /etc/passwd`
 TESTVIRTUAL=`grep "hypervisor" /proc/cpuinfo`
+MYSESSION=`echo $XDG_SESSION_ID`
 
 if [ "$ARCHARM" != "" ] || [ "$TESTLIVE" != "" ] || [ "$TESTVIRTUAL" != "" ]; then
 	
 $DIALOG $LOGO \
-$FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
+$FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "loginctl terminate-session $MYSESSION" \
 $FIELD"$LOCAL8!system-reboot!$LOCAL8":fbtn "systemctl reboot" \
 $FIELD"$LOCAL9!system-shutdown!$LOCAL9":fbtn "systemctl poweroff" \
 $BUTTON
@@ -63,7 +64,7 @@ $BUTTON
 else
 
 $DIALOG $LOGO \
-$FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "loginctl terminate-session $XDG_SESSION_ID" \
+$FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "loginctl terminate-session $MYSESSION" \
 $FIELD"$LOCAL5!system-suspend!$LOCAL5":fbtn "systemctl suspend" \
 $FIELD"$LOCAL6!system-suspend-hibernate!$LOCAL6":fbtn "systemctl hibernate" \
 $FIELD"$LOCAL8!system-reboot!$LOCAL8":fbtn "systemctl reboot" \
