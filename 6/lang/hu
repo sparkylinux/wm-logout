@@ -1,0 +1,17 @@
+# Hungarian localization file for wm-logout (Translated by Nemomen)
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
+# Under the GNU GPL v2
+# Last update 2019/09/19 by pavroo
+LOCAL1="Jelentkezzen ki”
+LOCAL2="Kilépés”
+LOCAL3="Válasszon akciót”
+LOCAL4="Kijelentkezés"
+LOCAL5="Felfüggesztés"
+LOCAL6="Hibernált"
+LOCAL7="Hibrid_Felfüggesztés"
+LOCAL8="Rendszer_újraindítás"
+LOCAL9="Leállítás"
+LOCAL10="Kikényszerített_Leállítás"
+### .desktop file to be translated too
+# Name[en_US]=Log Out
+# Comment[en_US]=Log Out window for various window managers

@@ -1,0 +1,17 @@
+# Svensk språkfil för Sparky WM logout.
+# Copyright 2015 Johnny Rosenberg <johnny.a.rosenberg@gmail.com> 2015-11-08
+# Under GNU GPL v2
+# Senast uppdaterad 2015-11-08
+LOCAL1="Logga ut"
+LOCAL2="Avsluta"
+LOCAL3="Välj"
+LOCAL4="Logga_ut"
+LOCAL5="Vänteläge"
+LOCAL6="Viloläge"
+LOCAL7="Hybrid_vänteläge"
+LOCAL8="Starta_om"
+LOCAL9="Stäng_av"
+LOCAL10="Tvinga_avstängning"
+### .desktop file to be translated too
+# Name[sv_SE]=Logga ut
+# Comment[sv_SE]=Utloggningsfönster för olika fönsterhanterare

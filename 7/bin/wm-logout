@@ -3,7 +3,8 @@
 # Log Out action script for tiny window managers.
 # It works with any window manager and systemd.
 # Copyrigt Paweł "pavroo" Pijanowski 2013-2023 under GNU GPLv3 license
-# Last update 2023/07/11
+# sparky 7 with tint2 installed
+# Last update 2023/10/07
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/wm-logout"
@@ -48,23 +49,36 @@ LOGO="--image=/usr/share/pixmaps/sparky-logo-clear0.png --image-on-top"
 #FONT="font_weight='bold'"
 FIELD="--field="
 BUTTON="--button="Cancel!gtk-cancel!Cancel":1 --buttons-layout=center"
-ARCHARM="`uname -m | grep arm`"
+ARCHARMHF="`uname -m | grep arm`"
+ARCHARM64="`uname -m | grep aaarch64`"
 TESTLIVE=`grep "live" /etc/passwd`
 TESTVIRTUAL=`grep "hypervisor" /proc/cpuinfo`
 MYSESSION=`echo $XDG_SESSION_ID`
+
+if [ "$ARCHARMHF" != "" ]; then
+WINDOW="mini"
+elif [ "$ARCHARM64" != "" ]; then
+WINDOW="mini"
+elif [ "$TESTLIVE" != "" ]; then
+WINDOW="mini"
+elif [ "$TESTVIRTUAL" != "" ]; then
+WINDOW="mini"
+else
+WINDOW="big"
+fi
+
 # kill openbox
 CHECKOPENBOX=`pidof openbox`
 CHECKTINT2=`pidof tint2`
-CHECKFBPANEL=`pidof fbpanel`
-if [ "$CHECKOPENBOX" != "" ]; then
-	if [ "$CHECKTINT2" != "" ] || [ "$CHECKFBPANEL" != "" ]; then
-		if [ "$ARCHARM" != "" ] || [ "$TESTLIVE" != "" ] || [ "$TESTVIRTUAL" != "" ]; then
+#CHECKFBPANEL=`pidof fbpanel`
+if [ "$CHECKOPENBOX" != "" ] && [ "$CHECKTINT2" != "" ]; then
+	if [ "$WINDOW" = "mini" ]; then
 $DIALOG $LOGO \
 $FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "openbox --exit" \
 $FIELD"$LOCAL8!system-reboot!$LOCAL8":fbtn "systemctl reboot" \
 $FIELD"$LOCAL9!system-shutdown!$LOCAL9":fbtn "systemctl poweroff" \
 $BUTTON
-		else
+	elif [ "$WINDOW" = "big" ]; then
 $DIALOG $LOGO \
 $FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "openbox --exit" \
 $FIELD"$LOCAL5!system-suspend!$LOCAL5":fbtn "systemctl suspend" \
@@ -72,18 +86,18 @@ $FIELD"$LOCAL6!system-suspend-hibernate!$LOCAL6":fbtn "systemctl hibernate" \
 $FIELD"$LOCAL8!system-reboot!$LOCAL8":fbtn "systemctl reboot" \
 $FIELD"$LOCAL9!system-shutdown!$LOCAL9":fbtn "systemctl poweroff" \
 $BUTTON
-		fi
 	fi
-fi
+	
+else
 
 # kill other sessions
-if [ "$ARCHARM" != "" ] || [ "$TESTLIVE" != "" ] || [ "$TESTVIRTUAL" != "" ]; then
+	if [ "$WINDOW" = "mini" ]; then
 $DIALOG $LOGO \
 $FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "loginctl terminate-session $MYSESSION" \
 $FIELD"$LOCAL8!system-reboot!$LOCAL8":fbtn "systemctl reboot" \
 $FIELD"$LOCAL9!system-shutdown!$LOCAL9":fbtn "systemctl poweroff" \
 $BUTTON
-else
+	elif [ "$WINDOW" = "big" ]; then
 $DIALOG $LOGO \
 $FIELD"$LOCAL4!system-logout!$LOCAL4":fbtn "loginctl terminate-session $MYSESSION" \
 $FIELD"$LOCAL5!system-suspend!$LOCAL5":fbtn "systemctl suspend" \
@@ -91,6 +105,7 @@ $FIELD"$LOCAL6!system-suspend-hibernate!$LOCAL6":fbtn "systemctl hibernate" \
 $FIELD"$LOCAL8!system-reboot!$LOCAL8":fbtn "systemctl reboot" \
 $FIELD"$LOCAL9!system-shutdown!$LOCAL9":fbtn "systemctl poweroff" \
 $BUTTON
+	fi
 fi
 
 exit 0
