@@ -4,7 +4,7 @@
 # It works with any window manager and systemd.
 # Copyrigt Paweł "pavroo" Pijanowski 2013-2023 under GNU GPLv3 license
 # sparky 7 with tint2 installed
-# Last update 2023/10/07
+# Last update 2023/11/13
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/wm-logout"
@@ -50,7 +50,7 @@ LOGO="--image=/usr/share/pixmaps/sparky-logo-clear0.png --image-on-top"
 FIELD="--field="
 BUTTON="--button="Cancel!gtk-cancel!Cancel":1 --buttons-layout=center"
 ARCHARMHF="`uname -m | grep arm`"
-ARCHARM64="`uname -m | grep aaarch64`"
+ARCHARM64="`uname -m | grep aarch64`"
 TESTLIVE=`grep "live" /etc/passwd`
 TESTVIRTUAL=`grep "hypervisor" /proc/cpuinfo`
 MYSESSION=`echo $XDG_SESSION_ID`
