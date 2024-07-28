@@ -1,0 +1,18 @@
+# Suomenkielinen lokalisointitiedosto wm-logoutille
+# Tekijänoikeus 2015 PaweÅ‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/04
+# GNU GPL v2:n alla
+# Viimeisin päivitys 2017/02/10, tekijä pavroo
+LOCAL1="Kirjaudu ulos"
+LOCAL2="Poistu"
+LOCAL3="Valitse toiminto"
+LOCAL4="Kirjaudu ulos"
+LOCAL5="Keskeytä"
+LOCAL6="Hibernate"
+LOCAL7="Hybridi_Keskeytys"
+LOCAL8="Käynnistä uudelleen"
+LOCAL9="Pois päältä"
+LOCAL10="Force_Power_Off"
+LOCAL11="Lukitusnäyttö"
+### .desktop-tiedosto myös käännettäväksi
+# Name[fi]=Kirjaudu ulos
+# Comment[fi]=Kirjaudu ulos ikkunasta eri ikkunanhaltijoille

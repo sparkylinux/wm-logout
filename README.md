@@ -2,7 +2,7 @@ wm-logout
 Log Out action script for tiny window managers.
 It works with any window manager and systemd.
 
-Copyright (C) 2013-2023 Paweł Pijanowski and others, see copyright file.
+Copyright (C) 2013-2024 Paweł Pijanowski and others, see copyright file.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
